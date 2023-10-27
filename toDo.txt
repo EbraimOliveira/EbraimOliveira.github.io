@@ -1,0 +1,4 @@
+componente header com 
+  - 3 botoes para as rotas
+  - idiomas
+  - tema
