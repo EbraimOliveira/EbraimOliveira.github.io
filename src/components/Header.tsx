@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { useLanguageContext } from '../contexts/languages/Provider';
 
 export default function Header() {
@@ -8,6 +8,7 @@ export default function Header() {
     toHobbiesBtn,
     toVoluntaryBtn,
     languageBtn,
+    homeBtn,
     changeLanguage
   } = useLanguageContext()
 
@@ -16,20 +17,30 @@ export default function Header() {
     navigate(`/${route}`)
   };
 
+  const location = useLocation();
+
   return (
     <header>
-      <button
-        onClick={() => handleClick('projects')}>
-        {toProjectsBtn}
-      </button>
-      <button
-        onClick={() => handleClick('hobbies')}>
-        {toHobbiesBtn}
-      </button>
-      <button
-        onClick={() => handleClick('voluntary')}>
-        {toVoluntaryBtn}
-      </button>
+      {location.pathname != '/' ?
+        <button
+          onClick={() => handleClick('')}>
+          {homeBtn}
+        </button> : null}
+      {location.pathname != '/projects' ?
+        <button
+          onClick={() => handleClick('projects')}>
+          {toProjectsBtn}
+        </button> : null}
+      {location.pathname != '/hobbies' ?
+        <button
+          onClick={() => handleClick('hobbies')}>
+          {toHobbiesBtn}
+        </button> : null}
+      {location.pathname != '/voluntary' ?
+        <button
+          onClick={() => handleClick('voluntary')}>
+          {toVoluntaryBtn}
+        </button> : null}
       <button
         onClick={changeLanguage}>
         {languageBtn}
