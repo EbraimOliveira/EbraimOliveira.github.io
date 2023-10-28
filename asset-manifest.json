@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.3a4c8cba.css",
-    "main.js": "/static/js/main.9af362c1.js",
+    "main.css": "/static/css/main.caff6a1e.css",
+    "main.js": "/static/js/main.02761014.js",
+    "static/media/por_do_Sol.jpg": "/static/media/por_do_Sol.fab6f7c3b79f9b4e5649.jpg",
     "index.html": "/index.html",
-    "main.3a4c8cba.css.map": "/static/css/main.3a4c8cba.css.map",
-    "main.9af362c1.js.map": "/static/js/main.9af362c1.js.map"
+    "main.caff6a1e.css.map": "/static/css/main.caff6a1e.css.map",
+    "main.02761014.js.map": "/static/js/main.02761014.js.map"
   },
   "entrypoints": [
-    "static/css/main.3a4c8cba.css",
-    "static/js/main.9af362c1.js"
+    "static/css/main.caff6a1e.css",
+    "static/js/main.02761014.js"
   ]
 }
