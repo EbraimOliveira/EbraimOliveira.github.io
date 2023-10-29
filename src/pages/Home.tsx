@@ -12,7 +12,7 @@ export default function Home() {
         <Header></Header>
       </div>
       <div id="home">
-        <p>{welcomeTxt}</p>
+        <p style={{ whiteSpace: 'pre-line' }}>{welcomeTxt}</p>
       </div>
     </div>
   )

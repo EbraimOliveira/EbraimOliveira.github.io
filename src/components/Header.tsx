@@ -43,8 +43,8 @@ export default function Header() {
         {location.pathname !== '/voluntary' && renderNavButton('voluntary', toVoluntaryBtn)}
       </div>
       <div>
-        {/* <button onClick={changeLanguage}>{languageBtn}</button> */}
-        <input type="checkbox" onChange={changeLanguage} />
+        <button onClick={changeLanguage}>{languageBtn}</button>
+        {/* <input type="checkbox" onChange={changeLanguage} /> */}
       </div>
     </header>
   );
