@@ -18,7 +18,12 @@ export default function Header() {
 
   const renderNavButton = (route: string, label: string) => {
     return (
-      <button onClick={() => handleClick(route)}>{label}</button>
+      <button
+        onClick={() => handleClick(route)}
+        className='navigation_button'
+      >
+        {label}
+      </button>
     );
   };
 
@@ -27,18 +32,19 @@ export default function Header() {
   };
 
   return (
-    <header id='header'>
+    <header className='header'>
       <div>
         <h4>Ebraim Oliveira</h4>
       </div>
-      <div>
+      <div className='navigation_header'>
         {location.pathname !== '/' && renderNavButton('', toHomeBtn)}
         {location.pathname !== '/projects' && renderNavButton('projects', toProjectsBtn)}
         {location.pathname !== '/hobbies' && renderNavButton('hobbies', toHobbiesBtn)}
         {location.pathname !== '/voluntary' && renderNavButton('voluntary', toVoluntaryBtn)}
       </div>
       <div>
-        <button onClick={changeLanguage}>{languageBtn}</button>
+        {/* <button onClick={changeLanguage}>{languageBtn}</button> */}
+        <input type="checkbox" onChange={changeLanguage} />
       </div>
     </header>
   );
