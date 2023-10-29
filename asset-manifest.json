@@ -1,14 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.26e1fb1c.css",
-    "main.js": "/static/js/main.b7f742ee.js",
-    "static/media/por_do_Sol.jpg": "/static/media/por_do_Sol.fab6f7c3b79f9b4e5649.jpg",
+    "main.css": "/static/css/main.8bd5527e.css",
+    "main.js": "/static/js/main.731947d7.js",
     "index.html": "/index.html",
-    "main.26e1fb1c.css.map": "/static/css/main.26e1fb1c.css.map",
-    "main.b7f742ee.js.map": "/static/js/main.b7f742ee.js.map"
+    "main.8bd5527e.css.map": "/static/css/main.8bd5527e.css.map",
+    "main.731947d7.js.map": "/static/js/main.731947d7.js.map"
   },
   "entrypoints": [
-    "static/css/main.26e1fb1c.css",
-    "static/js/main.b7f742ee.js"
+    "static/css/main.8bd5527e.css",
+    "static/js/main.731947d7.js"
   ]
 }
