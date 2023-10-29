@@ -10,4 +10,10 @@
   box-shadow: 1px 1px 4px var(--color-dark4);
   height: 3.5em;
   padding: 0% 10%;
+  margin-bottom: 100px;
+};
+
+.navigation_button {
+    background-color: var(--color-dark2);
+    padding: 10px;
 };

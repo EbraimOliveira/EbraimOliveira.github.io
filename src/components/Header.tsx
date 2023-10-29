@@ -20,7 +20,7 @@ export default function Header() {
     return (
       <button
         onClick={() => handleClick(route)}
-        className='navigation_button'
+        type="button" className="btn btn-outline-light"
       >
         {label}
       </button>
@@ -31,10 +31,21 @@ export default function Header() {
     navigate(`/${route}`);
   };
 
+  const currencyRoute = (route: string) => {
+    const routes: { [key: string]: string } = {
+      '/': toHomeBtn,
+      '/projects': toProjectsBtn,
+      '/hobbies': toHobbiesBtn,
+      '/voluntary': toVoluntaryBtn
+    }
+    return routes[route]
+  };
+
+
   return (
     <header className='header'>
       <div>
-        <h4>Ebraim Oliveira</h4>
+        <h4>{currencyRoute(location.pathname)}</h4>
       </div>
       <div className='navigation_header'>
         {location.pathname !== '/' && renderNavButton('', toHomeBtn)}
