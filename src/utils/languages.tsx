@@ -3,7 +3,7 @@ export const portuguese = {
   toHobbiesBtn: 'Passatempos',
   toVoluntaryBtn: 'Voluntário',
   languageBtn: 'Idioma',
-  homeBtn: 'Início'
+  toHomeBtn: 'Início'
 };
 
 export const english = {
@@ -11,5 +11,5 @@ export const english = {
   toHobbiesBtn: 'Hobbies',
   toVoluntaryBtn: 'Voluntary',
   languageBtn: 'Language',
-  homeBtn: 'Home'
+  toHomeBtn: 'Home'
 };

@@ -5,9 +5,9 @@ export default function () {
   const { toProjectsBtn } = useLanguageContext()
 
   return (
-    <>
+    <div>
       <Header></Header>
       <p>{toProjectsBtn}</p>
-    </>
+    </div>
   )
 };

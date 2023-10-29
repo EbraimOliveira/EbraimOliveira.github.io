@@ -7,7 +7,9 @@ export default function () {
   return (
     <>
       <Header></Header>
-      <p>{toHobbiesBtn}</p>
+      <p>{toHobbiesBtn}
+        <br></br>
+        BoardGames, Escalada, Rpg, Literatura, Marcenaria, Moto</p>
     </>
   )
 };

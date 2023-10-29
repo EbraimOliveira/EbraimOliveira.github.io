@@ -1,51 +1,45 @@
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useLanguageContext } from '../contexts/languages/Provider';
 
-export default function Header() {
+import '../styles/header.css';
 
+export default function Header() {
   const {
     toProjectsBtn,
     toHobbiesBtn,
     toVoluntaryBtn,
     languageBtn,
-    homeBtn,
+    toHomeBtn,
     changeLanguage
-  } = useLanguageContext()
+  } = useLanguageContext();
 
   const navigate = useNavigate();
-  const handleClick = (route: string) => {
-    navigate(`/${route}`)
-  };
-
   const location = useLocation();
 
-  return (
-    <header>
-      {location.pathname != '/' ?
-        <button
-          onClick={() => handleClick('')}>
-          {homeBtn}
-        </button> : null}
-      {location.pathname != '/projects' ?
-        <button
-          onClick={() => handleClick('projects')}>
-          {toProjectsBtn}
-        </button> : null}
-      {location.pathname != '/hobbies' ?
-        <button
-          onClick={() => handleClick('hobbies')}>
-          {toHobbiesBtn}
-        </button> : null}
-      {location.pathname != '/voluntary' ?
-        <button
-          onClick={() => handleClick('voluntary')}>
-          {toVoluntaryBtn}
-        </button> : null}
-      <button
-        onClick={changeLanguage}>
-        {languageBtn}
-      </button>
-    </header>
-  )
-};
+  const renderNavButton = (route: string, label: string) => {
+    return (
+      <button onClick={() => handleClick(route)}>{label}</button>
+    );
+  };
 
+  const handleClick = (route: string) => {
+    navigate(`/${route}`);
+  };
+
+  return (
+    <header id='header'>
+      <div>
+        <h4>Ebraim Oliveira</h4>
+      </div>
+      <div>
+        {location.pathname !== '/' && renderNavButton('', toHomeBtn)}
+        {location.pathname !== '/projects' && renderNavButton('projects', toProjectsBtn)}
+        {location.pathname !== '/hobbies' && renderNavButton('hobbies', toHobbiesBtn)}
+        {location.pathname !== '/voluntary' && renderNavButton('voluntary', toVoluntaryBtn)}
+      </div>
+      <div>
+        <button onClick={changeLanguage}>{languageBtn}</button>
+      </div>
+    </header>
+  );
+}

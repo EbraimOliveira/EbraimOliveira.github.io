@@ -8,7 +8,7 @@ type LanguageContextState = {
   toProjectsBtn: string;
   toHobbiesBtn: string;
   toVoluntaryBtn: string;
-  homeBtn: string
+  toHomeBtn: string
 };
 
 const LanguageContext = createContext<LanguageContextState | undefined>(undefined);
@@ -32,7 +32,7 @@ export const LanguageProvider: React.FC<{ children: ReactNode }> = ({
     toProjectsBtn: currentLanguageData.toProjectsBtn,
     toHobbiesBtn: currentLanguageData.toHobbiesBtn,
     toVoluntaryBtn: currentLanguageData.toVoluntaryBtn,
-    homeBtn: currentLanguageData.homeBtn
+    toHomeBtn: currentLanguageData.toHomeBtn
   };
 
   return (

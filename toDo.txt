@@ -1,4 +1,6 @@
 componente header com 
-  - 3 botoes para as rotas
-  - idiomas
+  - 3 botoes para as rotas  --- OK
+  - idiomas --- OK
   - tema
+
+provider para language --- OK
