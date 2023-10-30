@@ -6,8 +6,8 @@ provider para language --- OK
 
 CSS:
 
--fazer a poha toda responsiva igual os botoes
+-fazer a poha toda responsiva igual os botoes ---OK
 - mudar a cor do currencyRoute para ficar igual ao header --- OK
-- alinhar o currencyRoute no header
-- aumentar a margin da div com os botoes para separa-los
+- alinhar o currencyRoute no header --- OK
+- aumentar a margin da div com os botoes para separa-los ---OK
 - mudar o botao idioma bara um switch

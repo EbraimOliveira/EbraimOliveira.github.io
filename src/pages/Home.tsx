@@ -15,8 +15,12 @@ export default function Home() {
       <div className="home">
         <p
           className="home_text"
-          style={{ whiteSpace: 'pre-line' }}>{welcomeTxt}</p>
-        <img src="./../../assets/notebook_cafeteria.jpg" alt="" />
+          style={{ whiteSpace: 'pre-line' }}>
+          {welcomeTxt}
+        </p>
+        <div>
+
+        </div>
       </div>
     </div>
   )
