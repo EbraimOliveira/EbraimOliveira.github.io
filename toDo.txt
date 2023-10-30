@@ -1,6 +1,13 @@
 componente header com 
   - 3 botoes para as rotas  --- OK
   - idiomas --- OK
-  - tema
 
 provider para language --- OK
+
+CSS:
+
+-fazer a poha toda responsiva igual os botoes
+- mudar a cor do currencyRoute para ficar igual ao header --- OK
+- alinhar o currencyRoute no header
+- aumentar a margin da div com os botoes para separa-los
+- mudar o botao idioma bara um switch

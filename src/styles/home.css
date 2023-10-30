@@ -1,3 +1,12 @@
-#home {
-   /* background-image: url(../../assets/por_do_Sol.jpg); */
+#home{
+  background-color: var(--color-dark5);
+  min-height: 100vh;
+  /* background-image: url('./../../assets/por_do_Sol.jpg'); */
 };
+
+.home_text{
+  min-width: 50%;
+}
+
+.home{
+}

@@ -20,7 +20,7 @@ export default function Header() {
     return (
       <button
         onClick={() => handleClick(route)}
-        type="button" className="btn btn-outline-light"
+        type="button" className="btn btn-dark"
       >
         {label}
       </button>
@@ -44,19 +44,15 @@ export default function Header() {
 
   return (
     <header className='header'>
-      <div>
-        <h4>{currencyRoute(location.pathname)}</h4>
-      </div>
-      <div className='navigation_header'>
+      <h1 className='currency_route'>{currencyRoute(location.pathname)}</h1>
+      <nav className='navigation_header'>
         {location.pathname !== '/' && renderNavButton('', toHomeBtn)}
         {location.pathname !== '/projects' && renderNavButton('projects', toProjectsBtn)}
         {location.pathname !== '/hobbies' && renderNavButton('hobbies', toHobbiesBtn)}
         {location.pathname !== '/voluntary' && renderNavButton('voluntary', toVoluntaryBtn)}
-      </div>
-      <div>
-        <button onClick={changeLanguage}>{languageBtn}</button>
-        {/* <input type="checkbox" onChange={changeLanguage} /> */}
-      </div>
+      </nav>
+      <button onClick={changeLanguage}>{languageBtn}</button>
+      {/* <input type="checkbox" onChange={changeLanguage} /> */}
     </header>
   );
 }
