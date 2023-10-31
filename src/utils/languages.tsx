@@ -8,7 +8,7 @@ export const portuguese = {
   toProjectsBtn: 'Projetos',
   toHobbiesBtn: 'Passatempos',
   toVoluntaryBtn: 'Voluntário',
-  languageBtn: 'Idioma  ',
+  languageBtn: 'Idioma',
   toHomeBtn: 'Início',
   welcomeTxt: welcomeTxtPt,
 
@@ -18,7 +18,7 @@ export const english = {
   toProjectsBtn: 'Projects',
   toHobbiesBtn: 'Hobbies',
   toVoluntaryBtn: 'Voluntary',
-  languageBtn: 'Language  ',
+  languageBtn: 'Language',
   toHomeBtn: 'Home',
   welcomeTxt: welcomeTxtEn,
 };

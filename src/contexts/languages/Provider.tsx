@@ -14,6 +14,7 @@ type LanguageContextState = {
 
 const LanguageContext = createContext<LanguageContextState | undefined>(undefined);
 
+
 export const LanguageProvider: React.FC<{ children: ReactNode }> = ({
   children,
 }) => {
