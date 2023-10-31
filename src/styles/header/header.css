@@ -1,0 +1,11 @@
+@import './../root.css';
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-grey);
+  box-shadow: 1px 1px 4px var(--color-dark4);
+  padding: 0% 15%;
+  margin-bottom: 5em;
+};

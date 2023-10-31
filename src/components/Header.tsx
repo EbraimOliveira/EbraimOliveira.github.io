@@ -1,7 +1,10 @@
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useLanguageContext } from '../contexts/languages/Provider';
 
-import '../styles/header.css';
+import '../styles/header/header.css';
+import '../styles/header/navigation_header.css';
+import '../styles/header/language_btn.css';
+import '../styles/header/language_div.css';
 
 export default function Header() {
   const {
@@ -20,7 +23,7 @@ export default function Header() {
     return (
       <button
         onClick={() => handleClick(route)}
-        type="button" className="btn btn-dark"
+        type="button" className="btn btn-secondary"
       >
         {label}
       </button>
@@ -41,7 +44,6 @@ export default function Header() {
     return routes[route]
   };
 
-
   return (
     <header className='header'>
       <h1 className='currency_route'>{currencyRoute(location.pathname)}</h1>
@@ -51,8 +53,16 @@ export default function Header() {
         {location.pathname !== '/hobbies' && renderNavButton('hobbies', toHobbiesBtn)}
         {location.pathname !== '/voluntary' && renderNavButton('voluntary', toVoluntaryBtn)}
       </nav>
-      <button onClick={changeLanguage}>{languageBtn}</button>
-      {/* <input type="checkbox" onChange={changeLanguage} /> */}
+      <div className='language_div'>
+        <label style={{ whiteSpace: 'break-spaces' }} htmlFor="language_btn">{languageBtn}</label>
+        <button className='language_btn' onClick={changeLanguage} id='language_btn'></button>
+      </div>
+
+      {/* <div className="form-check form-switch">
+        <input
+          onChange={changeLanguage} className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+        <label className="form-check-label" htmlFor="flexSwitchCheckDefault">{languageBtn}</label>
+      </div> */}
     </header>
   );
-}
+};

@@ -1,0 +1,16 @@
+.language_btn {
+  background-image: url('./../../../assets/brasil.jpg');
+  min-width: 2em;
+  min-height: 2em;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.language_btn:hover {
+  opacity: 80%;
+}
+

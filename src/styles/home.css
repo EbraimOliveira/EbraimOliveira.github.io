@@ -1,10 +1,4 @@
 #home{
-  background-color: var(--color-dark5);
+  background-color: var(--color-dark4);
   min-height: 100vh;
 };
-
-.home_text{
-}
-
-.home{
-}
