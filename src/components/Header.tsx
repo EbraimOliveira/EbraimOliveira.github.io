@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { useLanguageContext } from '../contexts/languages/Provider';
 
@@ -8,12 +8,15 @@ import '../styles/header/header.css';
 import '../styles/header/navigation_header.css';
 import '../styles/header/language_btn.css';
 import '../styles/header/language_div.css';
+import '../styles/header/current_route.css';
 
-const PORTUGUESE_IMAGE_URL = './../../assets/brasil.jpg';
-const ENGLISH_IMAGE_URL = './../../assets/usa.png';
-const link = 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fbr.freepik.com%2Ffotos%2Flogo-brasil&psig=AOvVaw11ggHw4POJY0eCwzYCXpXn&ust=1698879600765000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMCs2uqxoYIDFQAAAAAdAAAAABAE'
-const RED = 'red';
-const YELLOW = 'yellow';
+import brazil from '../images/brazil.png';
+import usa from '../images/usa.png'
+
+const PORTUGUESE_IMAGE_URL = brazil;
+const ENGLISH_IMAGE_URL = usa;
+// const RED = 'red';
+// const YELLOW = 'yellow';
 
 export default function Header() {
   const {
@@ -22,43 +25,21 @@ export default function Header() {
     toVoluntaryBtn,
     languageBtn,
     toHomeBtn,
+    currentLanguage,
     changeLanguage
   } = useLanguageContext();
 
   const location = useLocation();
   const buttonRef = useRef<HTMLButtonElement>(null);
 
-  // const [iconUrl, setIconUrl] = useState(ENGLISH_IMAGE_URL)
-
-  // useEffect(() => {
-  //   const imgUrl = currentLanguage === 'english' ? ENGLISH_IMAGE_URL : PORTUGUESE_IMAGE_URL;
-  //   setIconUrl(imgUrl)
-  //   if (buttonRef.current) {
-  //     buttonRef.current.style.backgroundImage = `url(${iconUrl})`
-  //   }
-  // }, [currentLanguage]);
-
   useEffect(() => {
-    if (buttonRef.current) {
-      buttonRef.current.style.backgroundColor = YELLOW
-    }
-  }, [])
-
-  const changeIcon = () => {
-    const iconUrl = languageBtn === 'Language' ? RED : YELLOW;
-
-    console.log(iconUrl);
-    console.log(languageBtn);
+    const imgUrl = currentLanguage === 'english' ? ENGLISH_IMAGE_URL : PORTUGUESE_IMAGE_URL;
 
     if (buttonRef.current) {
-      buttonRef.current.style.backgroundColor = iconUrl
-    }
-  }
+      buttonRef.current.style.backgroundImage = `url(${imgUrl})`
 
-  const changeLanguageAndIcon = () => {
-    changeLanguage();
-    changeIcon();
-  }
+    }
+  }, [currentLanguage]);
 
   const currentRoute = (route: string) => {
     const routes: { [key: string]: string } = {
@@ -72,7 +53,7 @@ export default function Header() {
 
   return (
     <header className='header'>
-      <h1 className='currency_route'>{currentRoute(location.pathname)}</h1>
+      <h1 className='current_route'>{currentRoute(location.pathname)}</h1>
       <nav className='navigation_header'>
         {location.pathname !== '/' && <RenderNavBtn route='' label={toHomeBtn}></RenderNavBtn>}
         {location.pathname !== '/projects' && <RenderNavBtn route='projects' label={toProjectsBtn}></RenderNavBtn>}
@@ -81,7 +62,7 @@ export default function Header() {
       </nav>
       <div className='language_div'>
         <label style={{ whiteSpace: 'break-spaces' }} htmlFor="language_btn_id">{languageBtn}  </label>
-        <button className='language_btn' onClick={changeLanguageAndIcon} id='language_btn_id' ref={buttonRef}></button>
+        <button className='language_btn' onClick={changeLanguage} id='language_btn_id' ref={buttonRef}></button>
       </div>
     </header>
   );
