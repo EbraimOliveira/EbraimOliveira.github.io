@@ -12,6 +12,8 @@ import '../styles/header/language_div.css';
 const PORTUGUESE_IMAGE_URL = './../../assets/brasil.jpg';
 const ENGLISH_IMAGE_URL = './../../assets/usa.png';
 const link = 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fbr.freepik.com%2Ffotos%2Flogo-brasil&psig=AOvVaw11ggHw4POJY0eCwzYCXpXn&ust=1698879600765000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMCs2uqxoYIDFQAAAAAdAAAAABAE'
+const RED = 'red';
+const YELLOW = 'yellow';
 
 export default function Header() {
   const {
@@ -20,7 +22,6 @@ export default function Header() {
     toVoluntaryBtn,
     languageBtn,
     toHomeBtn,
-    currentLanguage,
     changeLanguage
   } = useLanguageContext();
 
@@ -39,9 +40,25 @@ export default function Header() {
 
   useEffect(() => {
     if (buttonRef.current) {
-      buttonRef.current.style.backgroundImage = `url(${link})`
+      buttonRef.current.style.backgroundColor = YELLOW
     }
   }, [])
+
+  const changeIcon = () => {
+    const iconUrl = languageBtn === 'Language' ? RED : YELLOW;
+
+    console.log(iconUrl);
+    console.log(languageBtn);
+
+    if (buttonRef.current) {
+      buttonRef.current.style.backgroundColor = iconUrl
+    }
+  }
+
+  const changeLanguageAndIcon = () => {
+    changeLanguage();
+    changeIcon();
+  }
 
   const currentRoute = (route: string) => {
     const routes: { [key: string]: string } = {
@@ -64,7 +81,7 @@ export default function Header() {
       </nav>
       <div className='language_div'>
         <label style={{ whiteSpace: 'break-spaces' }} htmlFor="language_btn_id">{languageBtn}  </label>
-        <button className='language_btn' onClick={changeLanguage} id='language_btn_id' ref={buttonRef}></button>
+        <button className='language_btn' onClick={changeLanguageAndIcon} id='language_btn_id' ref={buttonRef}></button>
       </div>
     </header>
   );
