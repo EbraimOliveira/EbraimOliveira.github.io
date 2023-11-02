@@ -1,7 +1,14 @@
 import Header from "../components/Header";
 import { useLanguageContext } from "../contexts/languages/Provider";
 
-import './../styles/home.css'
+import './../styles/home/home.css';
+import './../styles/home/main.css';
+import './../styles/home/main_text.css';
+import './../styles/home/aside.css';
+// import './../styles/home/img_div.css';
+import './../styles/home/image.css';
+
+import image from './../images/headset.jpg';
 
 export default function Home() {
 
@@ -12,16 +19,19 @@ export default function Home() {
       <div>
         <Header></Header>
       </div>
-      <div className="home">
-        <p
-          className="home_text"
-          style={{ whiteSpace: 'pre-line' }}>
-          {welcomeTxt}
-        </p>
-        <div>
-
-        </div>
-      </div>
+      <main className="main">
+        <article className="main_text">
+          <p
+            style={{ whiteSpace: 'pre-line' }}>
+            {welcomeTxt}
+          </p>
+        </article>
+        <aside className="aside">
+          {/* <div className="img_div"> */}
+          <img className="image" src={image} alt="image" />
+          {/* </div> */}
+        </aside>
+      </main>
     </div>
   )
 };

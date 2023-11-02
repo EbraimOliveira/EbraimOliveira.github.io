@@ -4,6 +4,22 @@ Aqui você encontrará alguns dos projetos nos quais trabalhei e informações s
 const welcomeTxtEn = `Hello, I'm Ebraim Oliveira, web and mobile developer. It's a pleasure to welcome you to my portfolio !
 Here you will find some of the projects I've worked on and information about my hobbies and volunteer experiences. Feel free to explore and follow my personal and professional progress.`
 
+const testTxt = `asdkjfblkajsdbnfvbsadf.kjvn.jsadbnçlajkftgoibauybgfnakljsngv.,chvçlkjfdjmv.,mnzorijóailrkmvṕiolafkmg~kljkkjvn.jsadbnçlajkftgoibauybgfnakljsngv.,chvçlkjfdjmv.,
+mnzorijóailrkmvṕiolafkmg~kljkkjvn.jsadbnçlajkftgoibauybgfnakljsngv.,chvçlkjfdjmv.,mnzorijóailrkmvṕiolafkmg~kljkkjvn.jsadbnçlajkftgoibauybgfnakljsngv.,chvçlkjfdjmv.,
+mnzorijóailrkmvṕiolafkmg~kljkkjvn.jsadbnçlajkftgoibauybgfnakljsngv.,chvçlkjfdjmv.,mnzorijóailrkmvṕiolafkmg~kljkkjvn.jsadbnçlajkftgoibauybgfnakljsngv.,chvçlkjfdjmv.,
+mnzorijóailrkmvṕiolafkmg~kljkkjvn.jsadbnçlajkftgoibauybgfnakljsngv.,chvçlkjfdjmv.,mnzorijóailrkmvṕiolafkmg~kljkkjvn.jsadbnçlajkftgoibauybgfnakljsngv.,chvçlkjfdjmv.,
+mnzorijóailrkmvṕiolafkmg~kljkkjvn.jsadbnçlajkftgoibauybgfnakljsngv.,chvçlkjfdjmv.,mnzorijóailrkmvṕiolafkmg~kljkkjvn.jsadbnçlajkftgoibauybgfnakljsngv.,chvçlkjfdjmv.,
+mnzorijóailrkmvṕiolafkmg~kljkkjvn.jsadbnçlajkftgoibauybgfnakljsngv.,chvçlkjfdjmv.,mnzorijóailrkmvṕiolafkmg~kljkkjvn.jsadbnçlajkftgoibauybgfnakljsngv.,chvçlkjfdjmv.,
+mnzorijóailrkmvṕiolafkmg~kljkkjvn.jsadbnçlajkftgoibauybgfnakljsngv.,chvçlkjfdjmv.,mnzorijóailrkmvṕiolafkmg~kljkkjvn.jsadbnçlajkftgoibauybgfnakljsngv.,chvçlkjfdjmv.,
+mnzorijóailrkmvṕiolafkmg~kljkkjvn.jsadbnçlajkftgoibauybgfnakljsngv.,chvçlkjfdjmv.,mnzorijóailrkmvṕiolafkmg~kljkkjvn.jsadbnçlajkftgoibauybgfnakljsngv.,chvçlkjfdjmv.,
+mnzorijóailrkmvṕiolafkmg~kljkkjvn.jsadbnçlajkftgoibauybgfnakljsngv.,chvçlkjfdjmv.,mnzorijóailrkmvṕiolafkmg~kljkkjvn.jsadbnçlajkftgoibauybgfnakljsngv.,chvçlkjfdjmv.,
+mnzorijóailrkmvṕiolafkmg~kljkkjvn.jsadbnçlajkftgoibauybgfnakljsngv.,chvçlkjfdjmv.,mnzorijóailrkmvṕiolafkmg~kljkkjvn.jsadbnçlajkftgoibauybgfnakljsngv.,chvçlkjfdjmv.,
+mnzorijóailrkmvṕiolafkmg~kljkkjvn.jsadbnçlajkftgoibauybgfnakljsngv.,chvçlkjfdjmv.,mnzorijóailrkmvṕiolafkmg~kljkkjvn.jsadbnçlajkftgoibauybgfnakljsngv.,chvçlkjfdjmv.,
+mnzorijóailrkmvṕiolafkmg~kljkkjvn.jsadbnçlajkftgoibauybgfnakljsngv.,chvçlkjfdjmv.,mnzorijóailrkmvṕiolafkmg~kljkkjvn.jsadbnçlajkftgoibauybgfnakljsngv.,chvçlkjfdjmv.,
+mnzorijóailrkmvṕiolafkmg~kljkkjvn.jsadbnçlajkftgoibauybgfnakljsngv.,chvçlkjfdjmv.,mnzorijóailrkmvṕiolafkmg~kljkkjvn.jsadbnçlajkftgoibauybgfnakljsngv.,chvçlkjfdjmv.,
+mnzorijóailrkmvṕiolafkmg~kljk`
+
+
 export const portuguese = {
   toProjectsBtn: 'Projetos',
   toHobbiesBtn: 'Passatempos',
@@ -11,6 +27,7 @@ export const portuguese = {
   languageBtn: 'Idioma',
   toHomeBtn: 'Início',
   welcomeTxt: welcomeTxtPt,
+  testTxt
 
 };
 

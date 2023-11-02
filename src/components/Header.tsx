@@ -15,8 +15,6 @@ import usa from '../images/usa.png'
 
 const PORTUGUESE_IMAGE_URL = brazil;
 const ENGLISH_IMAGE_URL = usa;
-// const RED = 'red';
-// const YELLOW = 'yellow';
 
 export default function Header() {
   const {
