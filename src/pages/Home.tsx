@@ -28,7 +28,7 @@ export default function Home() {
         </article>
         <aside className="aside">
           {/* <div className="img_div"> */}
-          <img className="image" src={image} alt="image" />
+          <img className="image" src={image} alt="ebraim's photo" />
           {/* </div> */}
         </aside>
       </main>

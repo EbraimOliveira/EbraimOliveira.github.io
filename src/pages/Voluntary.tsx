@@ -1,9 +1,10 @@
 import Header from "../components/Header"
 import { useLanguageContext } from "../contexts/languages/Provider"
 
-import { portuguese } from './../utils/languages'
-
 import './../styles/voluntary.css';
+import './../styles/manutencao/manutencaoDiv.css';
+
+import paginaEmManutencao from '../images/paginaEmConstrucao.jpg';
 
 export default function () {
   const { toVoluntaryBtn } = useLanguageContext()
@@ -11,8 +12,9 @@ export default function () {
   return (
     <div id="voluntary">
       <Header></Header>
-      <p>{toVoluntaryBtn}</p>
-      <p>{portuguese.testTxt}</p>
+      <div className="manutencaoDiv">
+        <img src={paginaEmManutencao} alt="Página em manutenção" />
+      </div>
     </div>
   )
 };

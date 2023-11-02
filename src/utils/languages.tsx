@@ -4,38 +4,46 @@ Aqui você encontrará alguns dos projetos nos quais trabalhei e informações s
 const welcomeTxtEn = `Hello, I'm Ebraim Oliveira, web and mobile developer. It's a pleasure to welcome you to my portfolio !
 Here you will find some of the projects I've worked on and information about my hobbies and volunteer experiences. Feel free to explore and follow my personal and professional progress.`
 
-const testTxt = `asdkjfblkajsdbnfvbsadf.kjvn.jsadbnçlajkftgoibauybgfnakljsngv.,chvçlkjfdjmv.,mnzorijóailrkmvṕiolafkmg~kljkkjvn.jsadbnçlajkftgoibauybgfnakljsngv.,chvçlkjfdjmv.,
-mnzorijóailrkmvṕiolafkmg~kljkkjvn.jsadbnçlajkftgoibauybgfnakljsngv.,chvçlkjfdjmv.,mnzorijóailrkmvṕiolafkmg~kljkkjvn.jsadbnçlajkftgoibauybgfnakljsngv.,chvçlkjfdjmv.,
-mnzorijóailrkmvṕiolafkmg~kljkkjvn.jsadbnçlajkftgoibauybgfnakljsngv.,chvçlkjfdjmv.,mnzorijóailrkmvṕiolafkmg~kljkkjvn.jsadbnçlajkftgoibauybgfnakljsngv.,chvçlkjfdjmv.,
-mnzorijóailrkmvṕiolafkmg~kljkkjvn.jsadbnçlajkftgoibauybgfnakljsngv.,chvçlkjfdjmv.,mnzorijóailrkmvṕiolafkmg~kljkkjvn.jsadbnçlajkftgoibauybgfnakljsngv.,chvçlkjfdjmv.,
-mnzorijóailrkmvṕiolafkmg~kljkkjvn.jsadbnçlajkftgoibauybgfnakljsngv.,chvçlkjfdjmv.,mnzorijóailrkmvṕiolafkmg~kljkkjvn.jsadbnçlajkftgoibauybgfnakljsngv.,chvçlkjfdjmv.,
-mnzorijóailrkmvṕiolafkmg~kljkkjvn.jsadbnçlajkftgoibauybgfnakljsngv.,chvçlkjfdjmv.,mnzorijóailrkmvṕiolafkmg~kljkkjvn.jsadbnçlajkftgoibauybgfnakljsngv.,chvçlkjfdjmv.,
-mnzorijóailrkmvṕiolafkmg~kljkkjvn.jsadbnçlajkftgoibauybgfnakljsngv.,chvçlkjfdjmv.,mnzorijóailrkmvṕiolafkmg~kljkkjvn.jsadbnçlajkftgoibauybgfnakljsngv.,chvçlkjfdjmv.,
-mnzorijóailrkmvṕiolafkmg~kljkkjvn.jsadbnçlajkftgoibauybgfnakljsngv.,chvçlkjfdjmv.,mnzorijóailrkmvṕiolafkmg~kljkkjvn.jsadbnçlajkftgoibauybgfnakljsngv.,chvçlkjfdjmv.,
-mnzorijóailrkmvṕiolafkmg~kljkkjvn.jsadbnçlajkftgoibauybgfnakljsngv.,chvçlkjfdjmv.,mnzorijóailrkmvṕiolafkmg~kljkkjvn.jsadbnçlajkftgoibauybgfnakljsngv.,chvçlkjfdjmv.,
-mnzorijóailrkmvṕiolafkmg~kljkkjvn.jsadbnçlajkftgoibauybgfnakljsngv.,chvçlkjfdjmv.,mnzorijóailrkmvṕiolafkmg~kljkkjvn.jsadbnçlajkftgoibauybgfnakljsngv.,chvçlkjfdjmv.,
-mnzorijóailrkmvṕiolafkmg~kljkkjvn.jsadbnçlajkftgoibauybgfnakljsngv.,chvçlkjfdjmv.,mnzorijóailrkmvṕiolafkmg~kljkkjvn.jsadbnçlajkftgoibauybgfnakljsngv.,chvçlkjfdjmv.,
-mnzorijóailrkmvṕiolafkmg~kljkkjvn.jsadbnçlajkftgoibauybgfnakljsngv.,chvçlkjfdjmv.,mnzorijóailrkmvṕiolafkmg~kljkkjvn.jsadbnçlajkftgoibauybgfnakljsngv.,chvçlkjfdjmv.,
-mnzorijóailrkmvṕiolafkmg~kljkkjvn.jsadbnçlajkftgoibauybgfnakljsngv.,chvçlkjfdjmv.,mnzorijóailrkmvṕiolafkmg~kljkkjvn.jsadbnçlajkftgoibauybgfnakljsngv.,chvçlkjfdjmv.,
-mnzorijóailrkmvṕiolafkmg~kljk`
+const hobbyClimbPt = 'Assim como na programação, a capacidade de resolver problemas é essencial na escalada. Talvez por isso essa seja a minha atividade de lazer favorita e onde reside a minha verdadeira paixão. Amo o contato com a natureza e as dificuldades que esse esporte me permite superar.'
+const hobbyClimbEn = ''
 
+const hobbyBoardGamesPt = ''
+const hobbyBoardGamesEn = ''
 
 export const portuguese = {
-  toProjectsBtn: 'Projetos',
-  toHobbiesBtn: 'Passatempos',
-  toVoluntaryBtn: 'Voluntário',
-  languageBtn: 'Idioma',
-  toHomeBtn: 'Início',
-  welcomeTxt: welcomeTxtPt,
-  testTxt
-
+  buttons: {
+    toProjectsBtn: 'Projetos',
+    toHobbiesBtn: 'Passatempos',
+    toVoluntaryBtn: 'Voluntário',
+    languageBtn: 'Idioma',
+    toHomeBtn: 'Início',
+  },
+  home: {
+    welcomeTxt: welcomeTxtPt,
+  },
+  projects: {},
+  voluntary: {},
+  hobbies: {
+    hobbyClimb: hobbyClimbPt,
+    hobbyBoardGames: hobbyBoardGamesPt
+  }
 };
 
 export const english = {
-  toProjectsBtn: 'Projects',
-  toHobbiesBtn: 'Hobbies',
-  toVoluntaryBtn: 'Voluntary',
-  languageBtn: 'Language',
-  toHomeBtn: 'Home',
-  welcomeTxt: welcomeTxtEn,
+  buttons: {
+    toProjectsBtn: 'Projects',
+    toHobbiesBtn: 'Hobbies',
+    toVoluntaryBtn: 'Voluntary',
+    languageBtn: 'Language',
+    toHomeBtn: 'Home',
+  },
+  home: {
+    welcomeTxt: welcomeTxtEn,
+  },
+  projetcs: {},
+  voluntary: {},
+  hobbies: {
+    hobbyClimb: hobbyClimbEn,
+    hobbyBoardGames: hobbyBoardGamesEn
+  }
 };

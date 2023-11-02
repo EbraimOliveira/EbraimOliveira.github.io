@@ -30,12 +30,12 @@ export const LanguageProvider: React.FC<{ children: ReactNode }> = ({
   const languageContextValues = {
     currentLanguage,
     changeLanguage,
-    languageBtn: currentLanguageData.languageBtn,
-    toProjectsBtn: currentLanguageData.toProjectsBtn,
-    toHobbiesBtn: currentLanguageData.toHobbiesBtn,
-    toVoluntaryBtn: currentLanguageData.toVoluntaryBtn,
-    toHomeBtn: currentLanguageData.toHomeBtn,
-    welcomeTxt: currentLanguageData.welcomeTxt,
+    languageBtn: currentLanguageData.buttons.languageBtn,
+    toProjectsBtn: currentLanguageData.buttons.toProjectsBtn,
+    toHobbiesBtn: currentLanguageData.buttons.toHobbiesBtn,
+    toVoluntaryBtn: currentLanguageData.buttons.toVoluntaryBtn,
+    toHomeBtn: currentLanguageData.buttons.toHomeBtn,
+    welcomeTxt: currentLanguageData.home.welcomeTxt,
   };
 
   return (

@@ -2,6 +2,9 @@ import Header from "../components/Header"
 import { useLanguageContext } from "../contexts/languages/Provider"
 
 import './../styles/hobbies.css'
+import './../styles/manutencao/manutencaoDiv.css';
+
+import paginaEmManutencao from '../images/paginaEmConstrucao.jpg';
 
 export default function () {
   const { toHobbiesBtn } = useLanguageContext()
@@ -9,9 +12,12 @@ export default function () {
   return (
     <div id="hobbies">
       <Header></Header>
-      <p>{toHobbiesBtn}
+      <div className="manutencaoDiv">
+        <img src={paginaEmManutencao} alt="página em manutenção" />
+      </div>
+      {/* <p>{toHobbiesBtn}
         <br></br>
-        BoardGames, Escalada, Rpg, Literatura, Marcenaria, Moto</p>
+        BoardGames, Escalada, Rpg, Literatura, Marcenaria , Moto</p> */}
     </div>
   )
 };

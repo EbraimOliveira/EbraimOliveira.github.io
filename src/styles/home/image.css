@@ -1,5 +1,5 @@
 .image{
   max-width: 100%;
   height: auto;
-  /* clip-path: circle(50% at 50% 50%); */
-}
+  border-radius: 5%;
+};
