@@ -5,7 +5,8 @@ const welcomeTxtEn = `Hello, I'm Ebraim Oliveira, web and mobile developer. It's
 Here you will find some of the projects I've worked on and information about my hobbies and volunteer experiences. Feel free to explore and follow my personal and professional progress.`
 
 const hobbyClimbPt = 'Assim como na programação, a capacidade de resolver problemas é essencial na escalada. Talvez por isso essa seja a minha atividade de lazer favorita e onde reside a minha verdadeira paixão. Amo o contato com a natureza e as dificuldades que esse esporte me permite superar.'
-const hobbyClimbEn = ''
+
+const hobbyClimbEn = "Just like in programming, problem-solving skills are crucial in climbing. Perhaps that's why it's my favorite leisure activity and where my true passion resides. I love being in touch with nature and the challenges this sport allows me to overcome."
 
 const hobbyBoardGamesPt = ''
 const hobbyBoardGamesEn = ''

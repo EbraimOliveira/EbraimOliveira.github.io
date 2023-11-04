@@ -1,8 +1,8 @@
 import Header from "../components/Header"
 import { useLanguageContext } from "../contexts/languages/Provider"
 
-import './../styles/voluntary.css';
-import './../styles/manutencao/manutencaoDiv.css';
+import './../styles/voluntary/voluntary.css';
+import './../styles/others/manutencaoDiv.css';
 
 import paginaEmManutencao from '../images/paginaEmConstrucao.jpg';
 
