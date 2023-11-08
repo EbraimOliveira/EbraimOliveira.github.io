@@ -30,9 +30,10 @@ export const portuguese = {
     hobbyBoardGames: hobbyBoardGamesPt
   },
   contactMe: {
-    name: 'nome',
-    messageMe: 'Enviar uma mensagem:',
-    msgBtn: 'Enviar',
+    nameTxt: 'nome',
+    messageTxt: 'Enviar uma mensagem:',
+    messageBtn: 'Enviar',
+    textArea: 'Mensagem'
   },
 };
 
@@ -55,8 +56,9 @@ export const english = {
     hobbyBoardGames: hobbyBoardGamesEn
   },
   contactMe: {
-    name: 'name',
-    messageMe: 'Send me a message:',
-    msgBtn: 'Submit',
+    nameTxt: 'name',
+    messageTxt: 'Send me a message:',
+    messageBtn: 'Submit',
+    textArea: 'Message'
   },
 };
