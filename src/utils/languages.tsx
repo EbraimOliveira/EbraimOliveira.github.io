@@ -12,6 +12,7 @@ const hobbyBoardGamesPt = ''
 const hobbyBoardGamesEn = ''
 
 export const portuguese = {
+  password: 'senha',
   buttons: {
     toProjectsBtn: 'Projetos',
     toHobbiesBtn: 'Passatempos',
@@ -27,10 +28,16 @@ export const portuguese = {
   hobbies: {
     hobbyClimb: hobbyClimbPt,
     hobbyBoardGames: hobbyBoardGamesPt
-  }
+  },
+  contactMe: {
+    name: 'nome',
+    messageMe: 'Enviar uma mensagem:',
+    msgBtn: 'Enviar',
+  },
 };
 
 export const english = {
+  password: 'password',
   buttons: {
     toProjectsBtn: 'Projects',
     toHobbiesBtn: 'Hobbies',
@@ -46,5 +53,10 @@ export const english = {
   hobbies: {
     hobbyClimb: hobbyClimbEn,
     hobbyBoardGames: hobbyBoardGamesEn
-  }
+  },
+  contactMe: {
+    name: 'name',
+    messageMe: 'Send me a message:',
+    msgBtn: 'Submit',
+  },
 };

@@ -10,6 +10,10 @@ type LanguageContextState = {
   toVoluntaryBtn: string;
   toHomeBtn: string;
   welcomeTxt: string;
+  name: string;
+  password: string;
+  messageMe: string;
+  msgBtn: string;
 };
 
 const LanguageContext = createContext<LanguageContextState | undefined>(undefined);
@@ -36,6 +40,10 @@ export const LanguageProvider: React.FC<{ children: ReactNode }> = ({
     toVoluntaryBtn: currentLanguageData.buttons.toVoluntaryBtn,
     toHomeBtn: currentLanguageData.buttons.toHomeBtn,
     welcomeTxt: currentLanguageData.home.welcomeTxt,
+    name: currentLanguageData.contactMe.name,
+    password: currentLanguageData.password,
+    messageMe: currentLanguageData.contactMe.messageMe,
+    msgBtn: currentLanguageData.contactMe.msgBtn,
   };
 
   return (
