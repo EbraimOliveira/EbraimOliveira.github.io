@@ -80,6 +80,7 @@ export default function ContactMe() {
 
       <div className='links'>
         <a href="https://www.linkedin.com/in/ebraimoliveira2236/"
+          about='blank_'
           className='icons'>
           <i className="bi-linkedin icons"></i>
         </a>
@@ -87,7 +88,7 @@ export default function ContactMe() {
           className='icons'>
           <i className="bi-github icons2"></i>
         </a>
-        <a href="www.instagram.com/ebraim_oliveira"
+        <a href="https://www.instagram.com/ebraim_oliveira"
           className='icons'>
           <i className="bi-instagram icons3"></i>
         </a>
