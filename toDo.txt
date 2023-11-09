@@ -11,3 +11,9 @@ CSS:
 - alinhar o currencyRoute no header --- OK
 - aumentar a margin da div com os botoes para separa-los ---OK
 - mudar o botao idioma bara um switch (mudado para circulo com bandeira) ---OK
+
+Contact:
+
+- fazer os links abrirem novas abas ao inves de redirecionar
+- um alert informando que o email foi enviado
+- um 'enviando' enquanto o email estiver sendo enviado

@@ -5,6 +5,7 @@ import './../styles/projects/projects.css'
 import './../styles/others/manutencaoDiv.css';
 
 import paginaEmManutencao from '../images/paginaEmConstrucao.jpg';
+import ContactMe from "../components/ContactMe";
 
 export default function () {
   const { toProjectsBtn } = useLanguageContext()
@@ -15,6 +16,7 @@ export default function () {
       <div className="manutencaoDiv">
         <img src={paginaEmManutencao} alt="" />
       </div>
+      <ContactMe></ContactMe>
     </div>
   )
 };

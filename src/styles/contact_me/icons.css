@@ -1,0 +1,21 @@
+.icons{
+  margin: 4%;
+  font-size: 47px;
+  color: rgba(87, 123, 243, 0.863);
+};
+
+.icons:hover{
+  color: aliceblue;
+}
+
+.icons2{
+  color: black;
+}
+
+.icons3{
+  color: rgb(255, 0, 85);
+}
+
+.icons4{
+  color: green;
+}
