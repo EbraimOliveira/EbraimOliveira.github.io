@@ -14,8 +14,8 @@ CSS:
 
 Contact:
 
-- fazer os links abrirem novas abas ao inves de redirecionar
-- um alert informando que o email foi enviado
+- fazer os links abrirem novas abas ao inves de redirecionar ---OK
+- um alert informando que o email foi enviado ---OK
+- link para insta e whats ---OK
+- fazer um efeito de mudar de tamanho, cor ou brilho quando passar o mouse nos icones ---OK
 - um 'enviando' enquanto o email estiver sendo enviado
-- link para insta e whats
-- fazer um efeito de mudar de tamanho, cor ou brilho quando passar o mouse nos icones

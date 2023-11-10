@@ -14,15 +14,21 @@ export default function ContactMe() {
   const [name, setName] = useState<string>('');
   const [email, setEmail] = useState<string>('');
   const [message, setMessage] = useState<string>('');
+  const [isSending, setIsSending] = useState(false);
+
 
   const {
     nameTxt,
     messageTxt,
     messageBtn,
-    textArea } = useLanguageContext()
+    textArea,
+    emailSent,
+    senting } = useLanguageContext()
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    setIsSending(true);
 
     const templateParams = {
       from_name: name,
@@ -30,13 +36,15 @@ export default function ContactMe() {
       message
     }
 
-    emailjs.send('service_0bgq0ji', 'template_v1b0rmc', templateParams, 'Z2449VMuaGieTJYsF').then((response) => {
-      console.log('enviado', response.status, response.text);
+    emailjs.send('service_0bgq0ji', 'template_v1b0rmc', templateParams, 'Z2449VMuaGieTJYsF').then(() => {
       setName('')
       setEmail('')
       setMessage('')
+      setIsSending(false);
+      alert(emailSent)
     }, (err) => {
       console.log('erro', err);
+      setIsSending(false)
     })
   }
 
@@ -74,27 +82,30 @@ export default function ContactMe() {
         <button
           type='submit'
           className='btn btn-light sendBtn'>
-          {messageBtn}
+          {isSending ? senting : messageBtn}
         </button>
       </form>
 
       <div className='links'>
         <a href="https://www.linkedin.com/in/ebraimoliveira2236/"
-          about='blank_'
+          target='_blank'
           className='icons'>
-          <i className="bi-linkedin icons"></i>
+          <i className="bi-linkedin icon1"></i>
         </a>
         <a href="https://github.com/ebraimoliveira"
+          target='_blank'
           className='icons'>
-          <i className="bi-github icons2"></i>
+          <i className="bi-github icon2"></i>
         </a>
         <a href="https://www.instagram.com/ebraim_oliveira"
+          target='_blank'
           className='icons'>
-          <i className="bi-instagram icons3"></i>
+          <i className="bi-instagram icon3"></i>
         </a>
-        <a href=""
+        <a href="https://wa.me/5541995152236"
+          target='_blank'
           className='icons'>
-          <i className="bi-whatsapp icons4"></i>
+          <i className="bi-whatsapp icon4"></i>
         </a>
       </div>
 

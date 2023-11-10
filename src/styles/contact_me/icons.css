@@ -1,20 +1,24 @@
 .icons{
   margin: 4%;
   font-size: 47px;
+}
+
+.icon1:hover{
   /* color: rgba(87, 123, 243, 0.863); */
-};
-.icons:hover{
-  color: aliceblue;
+  font-size: 70px;
 }
 
-.icons2{
+.icon2:hover{
   /* color: black; */
+  font-size: 70px;
 }
 
-.icons3{
+.icon3:hover{
   /* color: rgb(255, 0, 85); */
+  font-size: 70px;
 }
 
-.icons4{
+.icon4:hover{
   /* color: green; */
+  font-size: 70px;
 }
