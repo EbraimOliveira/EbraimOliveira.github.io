@@ -1,3 +1,5 @@
+@import './../others/root.css';
+
 .current_route{
   color: var(--color-dark4);
   font-weight: 500;

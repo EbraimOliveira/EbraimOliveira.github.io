@@ -1,6 +1,7 @@
+@import './../others/root.css';
+
 .input_area{
-  width: 80%;
-  margin: 5px;
+  margin: 6px;
   background-color: var(--color-dark2);
   padding: 1em;
   border: 1px solid var(--color-white); 

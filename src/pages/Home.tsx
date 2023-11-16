@@ -2,13 +2,13 @@ import Header from "../components/Header";
 import ContactMe from "../components/ContactMe";
 import { useLanguageContext } from "../contexts/languages/Provider";
 
-import './../styles/home/home.css';
-import './../styles/home/main.css';
-import './../styles/home/main_text.css';
-import './../styles/home/asideImg.css';
-import './../styles/home/image.css';
+// import './../styles/home/home.css';
+// import './../styles/home/main.css';
+// import './../styles/home/main_text.css';
+// import './../styles/home/asideImg.css';
+// import './../styles/home/image.css';
 
-import image from './../images/headset.jpg';
+import image from './../images/brazil.png';
 
 export default function Home() {
 

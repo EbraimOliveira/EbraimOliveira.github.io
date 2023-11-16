@@ -2,13 +2,18 @@ import { useLanguageContext } from '../contexts/languages/Provider';
 import { useState } from 'react';
 import emailjs from '@emailjs/browser';
 
-import './../styles/contact_me/contact_me.css';
-import './../styles/contact_me/email.css';
-import './../styles/contact_me/links.css';
-import './../styles/contact_me/input_area.css';
-import './../styles/contact_me/sendBtn.css';
-import './../styles/contact_me/contact_me_txt.css';
-import './../styles/contact_me/icons.css';
+// import './../styles/contact_me/contact_me.css';
+// import './../styles/contact_me/email.css';
+// import './../styles/contact_me/links.css';
+// import './../styles/contact_me/input_area.css';
+// import './../styles/contact_me/sendBtn.css';
+// import './../styles/contact_me/contact_me_txt.css';
+// import './../styles/contact_me/icons.css';
+// import './../styles/contact_me/name_input_area.css';
+// import './../styles/contact_me/email_input_area.css';
+// import './../styles/contact_me/txt_input_area.css';
+// import './../styles/contact_me/input_div.css';
+
 
 export default function ContactMe() {
   const [name, setName] = useState<string>('');
@@ -23,7 +28,7 @@ export default function ContactMe() {
     messageBtn,
     textArea,
     emailSent,
-    senting } = useLanguageContext()
+    sending } = useLanguageContext()
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -53,28 +58,31 @@ export default function ContactMe() {
 
       <form className="email" onSubmit={sendEmail}>
         <h4 className='contact_me_txt'>{messageTxt}</h4>
-        <input
-          placeholder={nameTxt}
-          className='input_area'
-          type="text"
-          required
-          onChange={(e) => setName(e.target.value)}
-          value={name}
-        />
+        <div className='input_div'>
+          <input
+            placeholder={nameTxt}
+            className='input_area name_input_area'
+            type="text"
+            required
+            onChange={(e) => setName(e.target.value)}
+            value={name}
+          />
 
-        <input
-          placeholder='email'
-          className='input_area'
-          type='email'
-          required
-          onChange={(e) => setEmail(e.target.value)}
-          value={email}
-        />
+          <input
+            placeholder='email'
+            className='input_area email_input_area'
+            type='email'
+            required
+            onChange={(e) => setEmail(e.target.value)}
+            value={email}
+          />
+        </div>
 
         <textarea
           placeholder={textArea}
-          className='input_area'
+          className='input_area txt_input_area'
           required
+          maxLength={666}
           onChange={(e) => setMessage(e.target.value)}
           value={message}
         />
@@ -82,7 +90,7 @@ export default function ContactMe() {
         <button
           type='submit'
           className='btn btn-light sendBtn'>
-          {isSending ? senting : messageBtn}
+          {isSending ? sending : messageBtn}
         </button>
       </form>
 

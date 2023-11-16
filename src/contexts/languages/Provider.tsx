@@ -16,7 +16,7 @@ type LanguageContextState = {
   messageBtn: string;
   textArea: string;
   emailSent: string;
-  senting: string;
+  sending: string;
 };
 
 const LanguageContext = createContext<LanguageContextState | undefined>(undefined);
@@ -49,7 +49,7 @@ export const LanguageProvider: React.FC<{ children: ReactNode }> = ({
     messageBtn: currentLanguageData.contactMe.messageBtn,
     textArea: currentLanguageData.contactMe.textArea,
     emailSent: currentLanguageData.contactMe.emailSent,
-    senting: currentLanguageData.contactMe.senting,
+    sending: currentLanguageData.contactMe.sending,
   };
 
   return (

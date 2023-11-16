@@ -35,7 +35,7 @@ export const portuguese = {
     messageBtn: 'Enviar',
     textArea: 'Mensagem',
     emailSent: 'Mensagem enviada com sucesso',
-    senting: 'Enviando...',
+    sending: 'Enviando...',
   },
 };
 
@@ -63,6 +63,6 @@ export const english = {
     messageBtn: 'Submit',
     textArea: 'Message',
     emailSent: 'Message sent successfully',
-    senting: 'Senting...'
+    sending: 'Senting...'
   },
 };

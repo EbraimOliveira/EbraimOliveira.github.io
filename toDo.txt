@@ -18,4 +18,18 @@ Contact:
 - um alert informando que o email foi enviado ---OK
 - link para insta e whats ---OK
 - fazer um efeito de mudar de tamanho, cor ou brilho quando passar o mouse nos icones ---OK
-- um 'enviando' enquanto o email estiver sendo enviado
+- um 'enviando' enquanto o email estiver sendo enviado ---OK
+
+
+General:
+
+- add publicação no linkedin:
+    - projeto Vão do muleque
+    - voluntário  
+
+- corrigir CSS:
+    - fazer funcionar em um único arquivo cada agrupamento e colocar junto com a página ou comoponente
+
+- estudar:
+    - postgresql
+  
