@@ -12,10 +12,14 @@ export default function () {
 
   return (
     <div id="projects">
-      <Header></Header>
-      <div className="manutencaoDiv">
-        <img src={paginaEmManutencao} alt="" />
+      <div>
+        <Header></Header>
       </div>
+      <main>
+        <div className="manutencaoDiv">
+          <img src={paginaEmManutencao} alt="" />
+        </div>
+      </main>
       <ContactMe></ContactMe>
     </div>
   )

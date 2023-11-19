@@ -11,10 +11,19 @@ export default function () {
 
   return (
     <div id="voluntary">
-      <Header></Header>
-      <div className="manutencaoDiv">
-        <img src={paginaEmManutencao} alt="Página em manutenção" />
+      <div>
+        <Header></Header>
       </div>
+      <main>
+        <a
+          href="https://altamontanha.com/dedo-do-moleque-projeto-leva-curso-de-escalada-a-comunidade-quilombola-na-chapada-dos-veadeiros/"
+          target="_blank">
+          Vão do Moleque
+        </a>
+        <div className="manutencaoDiv">
+          <img src={paginaEmManutencao} alt="Página em manutenção" />
+        </div>
+      </main>
     </div>
   )
 };

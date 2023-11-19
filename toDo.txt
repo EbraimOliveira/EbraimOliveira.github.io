@@ -28,7 +28,7 @@ General:
     - voluntário  
 
 - corrigir CSS:
-    - fazer funcionar em um único arquivo cada agrupamento e colocar junto com a página ou comoponente
+    - fazer funcionar em um único arquivo cada agrupamento e colocar junto com a página ou componente
 
 - estudar:
     - postgresql
