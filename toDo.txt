@@ -33,3 +33,9 @@ General:
 - estudar:
     - postgresql
   
+
+
+**************************************************************************************************************
+Na branch afterEjecting:
+
+    Após rodar o comando nom run eject surgiram vários arquivos, incluindo o webpack.config.js.
