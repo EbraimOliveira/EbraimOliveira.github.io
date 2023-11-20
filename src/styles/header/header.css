@@ -1,6 +1,4 @@
-@import './../others/root.css';
-
-.header {
+#header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -8,4 +6,35 @@
   box-shadow: 1px 1px 4px var(--color-dark3);
   padding: 0% 15%;
   margin-bottom: 5em;
-};
+}
+
+.current_route{
+  color: var(--color-dark4);
+  font-weight: 500;
+}
+
+.language_btn {
+  background-size: 100%;
+  min-width: 2em;
+  min-height: 2em;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.language_btn:hover {
+  opacity: 0.8;
+}
+
+.language_div{
+  display: flex;
+  align-items: center;
+}
+
+.navigation_header {
+  display: flex;
+  gap: 3%;
+}

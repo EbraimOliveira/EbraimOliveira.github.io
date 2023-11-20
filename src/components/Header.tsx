@@ -50,7 +50,7 @@ export default function Header() {
   };
 
   return (
-    <header className='header'>
+    <header id='header'>
       <h1 className='current_route'>{currentRoute(location.pathname)}</h1>
       <nav className='navigation_header'>
         {location.pathname !== '/' && <RenderNavBtn route='' label={toHomeBtn}></RenderNavBtn>}
