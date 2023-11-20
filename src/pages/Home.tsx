@@ -2,7 +2,7 @@ import Header from "../components/Header";
 import ContactMe from "../components/ContactMe";
 import { useLanguageContext } from "../contexts/languages/Provider";
 
-import image from './../images/WhatsApp Image 2023-11-20 at 13.12.30.jpeg';
+import image from './../images/WhatsApp Image 2023-11-20 at 17.41.11.jpeg';
 
 export default function Home() {
 

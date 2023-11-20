@@ -1,20 +1,15 @@
 import Header from "../components/Header"
 import { useLanguageContext } from "../contexts/languages/Provider"
 
-import paginaEmManutencao from '../images/paginaEmConstrucao.jpg';
-
 export default function () {
   const { toHobbiesBtn } = useLanguageContext()
 
   return (
     <div id="hobbies">
       <Header></Header>
-      <div className="manutencaoDiv">
-        <img src={paginaEmManutencao} alt="página em manutenção" />
-      </div>
-      {/* <p>{toHobbiesBtn}
+      <p>{toHobbiesBtn}
         <br></br>
-        BoardGames, Escalada, Rpg, Literatura, Marcenaria , Moto</p> */}
+        BoardGames, Escalada, Rpg, Literatura, Marcenaria , Moto</p>
     </div>
   )
 };

@@ -63,6 +63,6 @@ export const english = {
     messageBtn: 'Submit',
     textArea: 'Message',
     emailSent: 'Message sent successfully',
-    sending: 'Senting...'
+    sending: 'Sending...'
   },
 };
