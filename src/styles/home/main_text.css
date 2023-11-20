@@ -1,6 +1,0 @@
-.main_text{
-  flex: 2;
-  margin: 10vh 1vw 1vh 7vw;
-};
-
-/* o flex 2 significa que o texto ocupara o dobro do espaço vertical disponivel em relação ao aside que é flex 1 */
