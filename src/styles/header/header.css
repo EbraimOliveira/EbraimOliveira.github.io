@@ -1,3 +1,5 @@
+@import './../others/root.css';
+
 #header {
   display: flex;
   align-items: center;
@@ -8,7 +10,7 @@
   margin-bottom: 5em;
 }
 
-.current_route{
+.current_route {
   color: var(--color-dark4);
   font-weight: 500;
 }
@@ -29,7 +31,7 @@
   opacity: 0.8;
 }
 
-.language_div{
+.language_div {
   display: flex;
   align-items: center;
 }
@@ -37,4 +39,16 @@
 .navigation_header {
   display: flex;
   gap: 3%;
+}
+
+/* Media query para telas menores */
+@media screen and (max-width: 768px) {
+  #header {
+    flex-direction: column; /* Altera a direção para coluna em telas menores */
+    align-items: flex-start; /* Ajusta o alinhamento */
+  }
+
+  .navigation_header {
+    flex-direction: column; /* Altera a direção para coluna em telas menores */
+  }
 }

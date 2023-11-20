@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 
-import './styles/others/reset.css'
+import './styles/others/reset.css';
 import './styles/header/header.css';
 import './styles/contact_me/contact_me.css';
 import './styles/home/home.css';

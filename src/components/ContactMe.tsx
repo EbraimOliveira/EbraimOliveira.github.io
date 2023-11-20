@@ -2,19 +2,6 @@ import { useLanguageContext } from '../contexts/languages/Provider';
 import { useState } from 'react';
 import emailjs from '@emailjs/browser';
 
-// import './../styles/contact_me/contact_me.css';
-// import './../styles/contact_me/email.css';
-// import './../styles/contact_me/links.css';
-// import './../styles/contact_me/input_area.css';
-// import './../styles/contact_me/sendBtn.css';
-// import './../styles/contact_me/contact_me_txt.css';
-// import './../styles/contact_me/icons.css';
-// import './../styles/contact_me/name_input_area.css';
-// import './../styles/contact_me/email_input_area.css';
-// import './../styles/contact_me/txt_input_area.css';
-// import './../styles/contact_me/input_div.css';
-
-
 export default function ContactMe() {
   const [name, setName] = useState<string>('');
   const [email, setEmail] = useState<string>('');

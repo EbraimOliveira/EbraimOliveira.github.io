@@ -4,12 +4,6 @@ import { useLanguageContext } from '../contexts/languages/Provider';
 
 import RenderNavBtn from './RenderNavBtn';
 
-// import '../styles/header/header.css';
-// import '../styles/header/navigation_header.css';
-// import '../styles/header/language_btn.css';
-// import '../styles/header/language_div.css';
-// import '../styles/header/current_route.css';
-
 import brazil from '../images/brazil.png';
 import usa from '../images/usa.png'
 
@@ -50,7 +44,7 @@ export default function Header() {
   };
 
   return (
-    <header className='header'>
+    <header id='header'>
       <h1 className='current_route'>{currentRoute(location.pathname)}</h1>
       <nav className='navigation_header'>
         {location.pathname !== '/' && <RenderNavBtn route='' label={toHomeBtn}></RenderNavBtn>}

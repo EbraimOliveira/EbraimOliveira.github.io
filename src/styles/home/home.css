@@ -1,8 +1,10 @@
+@import './../others/root.css';
+
 #home{
   background-color: var(--color-dark4);
   min-height: 100vh;
   display: flex;
-  flex-direction: column
+  flex-direction: column;
 }
 
 .main{
