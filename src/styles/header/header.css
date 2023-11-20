@@ -27,6 +27,10 @@
   cursor: pointer;
 }
 
+.language_label {
+  color: black;
+}
+
 .language_btn:hover {
   opacity: 0.8;
 }
@@ -42,7 +46,7 @@
 }
 
 /* Media query para telas menores */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 666px) {
   #header {
     flex-direction: column; /* Altera a direção para coluna em telas menores */
     align-items: flex-start; /* Ajusta o alinhamento */

@@ -53,7 +53,7 @@ export default function Header() {
         {location.pathname !== '/voluntary' && <RenderNavBtn route='voluntary' label={toVoluntaryBtn}></RenderNavBtn>}
       </nav>
       <div className='language_div'>
-        <label style={{ whiteSpace: 'break-spaces' }} htmlFor="language_btn_id">{languageBtn}  </label>
+        <label className='language_label' style={{ whiteSpace: 'break-spaces' }} htmlFor="language_btn_id">{languageBtn}  </label>
         <button className='language_btn' onClick={changeLanguage} id='language_btn_id' ref={buttonRef}></button>
       </div>
     </header>
