@@ -6,8 +6,7 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap; 
-  margin-bottom: 5%;
-  margin-top: 5%;
+  margin: 5% 0;
 }
 
 .email{
@@ -32,11 +31,8 @@
   margin: 6px;
   background-color: var(--color-dark2);
   padding: 1em;
-  border: 1px solid var(--color-white); 
-  border-top-left-radius: 5px; 
-  border-top-right-radius: 5px; 
-  border-bottom-left-radius: 5px; 
-  border-bottom-right-radius: 5px; 
+  border: 1px solid var(--color-white);
+  border-radius: 5px; 
 }
 
 .sendBtn{
@@ -62,19 +58,7 @@
   font-size: 47px;
 }
 
-.icon1:hover{
-  font-size: 70px;
-}
-
-.icon2:hover{
-  font-size: 70px;
-}
-
-.icon3:hover{
-  font-size: 70px;
-}
-
-.icon4:hover{
+.icons:hover{
   font-size: 70px;
 }
 

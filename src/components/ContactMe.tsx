@@ -85,22 +85,22 @@ export default function ContactMe() {
         <a href="https://www.linkedin.com/in/ebraimoliveira2236/"
           target='_blank'
           className='icons'>
-          <i className="bi-linkedin icon1"></i>
+          <i className="bi-linkedin"></i>
         </a>
         <a href="https://github.com/ebraimoliveira"
           target='_blank'
           className='icons'>
-          <i className="bi-github icon2"></i>
+          <i className="bi-github"></i>
         </a>
         <a href="https://www.instagram.com/ebraim_oliveira"
           target='_blank'
           className='icons'>
-          <i className="bi-instagram icon3"></i>
+          <i className="bi-instagram"></i>
         </a>
         <a href="https://wa.me/5541995152236"
           target='_blank'
           className='icons'>
-          <i className="bi-whatsapp icon4"></i>
+          <i className="bi-whatsapp"></i>
         </a>
       </div>
 
