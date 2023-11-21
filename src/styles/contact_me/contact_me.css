@@ -55,11 +55,13 @@
 
 .icons{
   margin: 4%;
-  font-size: 47px;
+  font-size: 60px;
 }
 
 .icons:hover{
-  transform: scale(1.5);
+  /* transform: scale(1.5); */
+  transform: rotate(360deg);
+  transition: transform 0.3s ease-in-out;
 }
 
 .name_input_area{

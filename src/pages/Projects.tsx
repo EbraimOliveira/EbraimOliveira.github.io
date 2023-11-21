@@ -4,10 +4,12 @@ import Project from "../components/Project";
 
 import paginaEmManutencao from '../images/paginaEmConstrucao.jpg';
 import pixelArtImg from '../images/pixelArt.png';
-import portifolioImg from '../images/portifolio.png'
+import portifolioImg from '../images/portifolio.png';
+import cosmoImg from '../images/COSMO.png';
 
 const pixelArt = "https://pixels-gnpvg0j9g-ebraimoliveira.vercel.app/";
-const myPortifolio = 'https://ebraimoliveira.github.io/'
+const myPortifolio = 'https://ebraimoliveira.github.io/';
+const cosmo = 'https://sites.google.com/a/cosmo.org.br/cosmo/';
 
 const projectsList = [
   {
@@ -20,7 +22,11 @@ const projectsList = [
     projectLink: myPortifolio,
     projectName: 'Portifolio',
   },
-
+  {
+    projectImage: cosmoImg,
+    projectLink: cosmo,
+    projectName: 'COSMO',
+  },
 ]
 
 export default function () {
@@ -29,9 +35,11 @@ export default function () {
     <div id="projects">
       <Header></Header>
       <main>
+        <h2 className="projectsTxt">PROJETOS</h2>
         <div className="projectsList">
-          {projectsList.map(({ projectImage, projectLink, projectName }) => (
+          {projectsList.map(({ projectImage, projectLink, projectName }, index) => (
             <Project
+              key={projectLink + index}
               projectLink={projectLink}
               projectImage={projectImage}
               projectName={projectName}

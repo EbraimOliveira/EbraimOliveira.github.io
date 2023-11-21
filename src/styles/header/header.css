@@ -47,7 +47,7 @@
 
 /* Media query para telas menores */
 @media screen and (max-width: 666px) {
-  #header {
+  .navigation_header {
     flex-direction: column; /* Altera a direção para coluna em telas menores */
     align-items: flex-start; /* Ajusta o alinhamento */
   }
