@@ -1,6 +1,42 @@
+@import './../others/root.css';
+
 #projects{
-  /* background-color: var(--color-dark4); */
+  background-color: var(--color-dark4);
   min-height: 100vh;
   display: flex;
   flex-direction: column
-};
+}
+
+.projectsList{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap; 
+  justify-content: space-around;
+
+}
+
+.projectDiv{
+  display: flex;
+  flex-direction: column;
+  max-width: 30%;
+}
+
+.projectLink{
+  display: flex;
+  flex-direction: column;
+}
+
+.projectImg{
+  border-radius: 2%;
+  border: 2px solid blue;
+}
+
+.projectImg:hover{
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+  filter: brightness(1.2); 
+
+  /* transform: rotate(-3deg);
+  transition: transform 0.3s ease-in-out; */
+}
