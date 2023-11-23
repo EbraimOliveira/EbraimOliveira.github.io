@@ -9,12 +9,12 @@ export default function () {
   return (
     <div id="hobbies">
       <Header></Header>
-      <p>{toHobbiesBtn}
 
-        <div className="manutencaoDiv">
-          <img src={paginaEmManutencao} alt="Página em manutenção" />
-        </div>
-        <br></br>
+      <div className="manutencaoDiv">
+        <img src={paginaEmManutencao} alt="Página em manutenção" />
+      </div>
+      <br></br>
+      <p>{toHobbiesBtn}
         BoardGames, Escalada, Rpg, Literatura, Marcenaria , Moto</p>
     </div>
   )

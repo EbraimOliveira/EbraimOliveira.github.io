@@ -2,10 +2,10 @@ import Header from "../components/Header"
 import Project from "../components/Project";
 // import { useLanguageContext } from "../contexts/languages/Provider"
 
-import paginaEmManutencao from '../images/paginaEmConstrucao.jpg';
 import pixelArtImg from '../images/pixelArt.png';
 import portifolioImg from '../images/portifolio.png';
 import cosmoImg from '../images/COSMO.png';
+import building from '../images/paginaEmConstrucao.jpg';
 
 const pixelArt = "https://pixels-gnpvg0j9g-ebraimoliveira.vercel.app/";
 const myPortifolio = 'https://ebraimoliveira.github.io/';
@@ -23,9 +23,14 @@ const projectsList = [
     projectName: 'Portifolio',
   },
   {
-    projectImage: cosmoImg,
-    projectLink: cosmo,
+    projectImage: building,
+    projectLink: '',
     projectName: 'COSMO',
+  },
+  {
+    projectImage: building,
+    projectLink: '',
+    projectName: 'Algoritmos',
   },
 ]
 
@@ -45,9 +50,6 @@ export default function () {
               projectName={projectName}
             />
           ))}
-        </div>
-        <div className="manutencaoDiv">
-          <img src={paginaEmManutencao} alt="Página em manutenção" />
         </div>
       </main>
     </div>

@@ -11,6 +11,16 @@ const hobbyClimbEn = "Just like in programming, problem-solving skills are cruci
 const hobbyBoardGamesPt = ''
 const hobbyBoardGamesEn = ''
 
+const aboutPortifolioPt = 'Um projeto relativamente simples e de design básico mas que apresentou diversos desafios e proporcionou muito aprendizado. Criado totalmente do zero e sem nenhum modelo ou mesmo inpiração. Além disso, optei por utilizar ferramentas como typescript e react que não necessariamente tinham necessidade de serem usados mas que me permitiram aprimorar meu conhecimento com as referidas tecnologias'
+
+const aboutPortifolioEn = ''
+
+const aboutCosmoPt = 'Projeto feito em grupo com outros devs Jrs também em início de carreira, este é eu projeto mais ambicioso até o momento. Construido inteiramente do zero e utilizando tecnologias que nunca havia estudado antes (React Native e frameworks), criamos uma integração entre front e back, aplicamos Arquiteturas em Camadas MSC (Model-Service-Controller), metodos de autenticação, conhecimento da estrutura Dockerfile e docker-compose, banco de dados não relacional (Mongo)...'
+
+const aboutCosmoEn = ''
+
+const aboutAlgorithmsPt = 'Uma aplicação simples de um conceito complexo, Merge Sort com Python'
+
 export const portuguese = {
   password: 'senha',
   buttons: {
@@ -23,7 +33,9 @@ export const portuguese = {
   home: {
     welcomeTxt: welcomeTxtPt,
   },
-  projects: {},
+  projects: {
+    aboutPortifolioPt,
+  },
   voluntary: {},
   hobbies: {
     hobbyClimb: hobbyClimbPt,
@@ -51,7 +63,9 @@ export const english = {
   home: {
     welcomeTxt: welcomeTxtEn,
   },
-  projetcs: {},
+  projects: {
+    aboutPortifolioEn,
+  },
   voluntary: {},
   hobbies: {
     hobbyClimb: hobbyClimbEn,
