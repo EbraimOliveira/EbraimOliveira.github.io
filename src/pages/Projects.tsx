@@ -4,12 +4,12 @@ import Project from "../components/Project";
 
 import pixelArtImg from '../images/pixelArt.png';
 import portifolioImg from '../images/portifolio.png';
-import cosmoImg from '../images/COSMO.png';
 import building from '../images/paginaEmConstrucao.jpg';
+import mergeSortImg from '../images/mergeSort.png'
 
 const pixelArt = "https://pixels-gnpvg0j9g-ebraimoliveira.vercel.app/";
 const myPortifolio = 'https://ebraimoliveira.github.io/';
-const cosmo = 'https://sites.google.com/a/cosmo.org.br/cosmo/';
+const mergeSort = 'https://merge-sort-coral.vercel.app/';
 
 const projectsList = [
   {
@@ -28,8 +28,8 @@ const projectsList = [
     projectName: 'COSMO',
   },
   {
-    projectImage: building,
-    projectLink: '',
+    projectImage: mergeSortImg,
+    projectLink: mergeSort,
     projectName: 'Algoritmos',
   },
 ]
