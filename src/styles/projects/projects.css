@@ -4,10 +4,7 @@
   background-color: var(--color-dark4);
   min-height: 100vh;
   display: flex;
-  flex-direction: column
-}
-
-.projectsTxt{
+  flex-direction: column;
   text-align: center;
 }
 
@@ -17,14 +14,28 @@
   align-items: center;
   flex-wrap: wrap; 
   justify-content: space-around;
-
 }
 
 .projectDiv{
   display: flex;
   flex-direction: column;
   max-width: 33%;
+}
 
+.projectBtn{
+  background-color: darkblue;
+  margin: 20% 10% 0% 10%;
+}
+
+.projectCode{
+  color: blue;
+  font-weight: normal;
+  transition: font-weight 0.3s ease;
+}
+
+.projectCode:hover{
+  color: rgb(0, 47, 255);
+  font-weight: bold;
 }
 
 .projectLink{
@@ -35,14 +46,12 @@
 
 .projectImg{
   border-radius: 2%;
-  border: 2px solid blue;
+  border: 2px solid black;
 }
 
 .projectImg:hover{
   transform: scale(1.1);
   transition: transform 0.3s ease-in-out;
   filter: brightness(1.4); 
-
-  /* transform: rotate(-3deg);
-  transition: transform 0.3s ease-in-out; */
+  border:  2px solid yellow;
 }

@@ -15,22 +15,26 @@ const projectsList = [
   {
     projectImage: pixelArtImg,
     projectLink: pixelArt,
-    projectName: 'Pixels Art',
+    projectName: 'Pixels Art ',
+    gitHub: 'https://github.com/ebraimoliveira/pixels_art',
   },
   {
     projectImage: portifolioImg,
     projectLink: myPortifolio,
-    projectName: 'Portifolio',
+    projectName: 'Portfolio ',
+    gitHub: 'https://github.com/ebraimoliveira/ebraimoliveira.github.io/tree/main',
   },
   {
     projectImage: building,
     projectLink: '',
-    projectName: 'COSMO',
+    projectName: 'COSMO ',
+    gitHub: '',
   },
   {
     projectImage: mergeSortImg,
     projectLink: mergeSort,
-    projectName: 'Algoritmos',
+    projectName: 'Merge Sort ',
+    gitHub: 'https://github.com/ebraimoliveira/merge_sort',
   },
 ]
 
@@ -42,12 +46,13 @@ export default function () {
       <main>
         <h2 className="projectsTxt">PROJETOS</h2>
         <div className="projectsList">
-          {projectsList.map(({ projectImage, projectLink, projectName }, index) => (
+          {projectsList.map(({ projectImage, projectLink, projectName, gitHub }, index) => (
             <Project
               key={projectLink + index}
               projectLink={projectLink}
               projectImage={projectImage}
               projectName={projectName}
+              gitHub={gitHub}
             />
           ))}
         </div>

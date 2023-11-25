@@ -35,6 +35,7 @@ export const portuguese = {
   },
   projects: {
     aboutPortifolioPt,
+    projectCode: 'Código do Projeto',
   },
   voluntary: {},
   hobbies: {
@@ -65,6 +66,7 @@ export const english = {
   },
   projects: {
     aboutPortifolioEn,
+    projectCode: 'Project Code',
   },
   voluntary: {},
   hobbies: {
