@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.6143b96c.css",
-    "main.js": "/static/js/main.0a0c954a.js",
+    "main.css": "/static/css/main.ab8f0b2d.css",
+    "main.js": "/static/js/main.4d7bbc22.js",
     "static/media/portifolio.png": "/static/media/portifolio.8bda976c2c6948fe77ce.png",
     "static/media/WhatsApp Image 2023-11-20 at 17.41.11.jpeg": "/static/media/WhatsApp Image 2023-11-20 at 17.41.11.ead4ce80a4a9399a7395.jpeg",
+    "static/media/building.png": "/static/media/building.e121c0fbdda33e9b8877.png",
     "static/media/usa.png": "/static/media/usa.7e17dcdb92416007fab4.png",
     "static/media/paginaEmConstrucao.jpg": "/static/media/paginaEmConstrucao.adf312355f65773cd0b3.jpg",
     "static/media/brazil.png": "/static/media/brazil.a679b9731277c2e84ae6.png",
     "static/media/pixelArt.png": "/static/media/pixelArt.90fa4033e3dd6cddd97f.png",
     "static/media/mergeSort.png": "/static/media/mergeSort.3021bbc03e831ea3b1e9.png",
     "index.html": "/index.html",
-    "main.6143b96c.css.map": "/static/css/main.6143b96c.css.map",
-    "main.0a0c954a.js.map": "/static/js/main.0a0c954a.js.map"
+    "main.ab8f0b2d.css.map": "/static/css/main.ab8f0b2d.css.map",
+    "main.4d7bbc22.js.map": "/static/js/main.4d7bbc22.js.map"
   },
   "entrypoints": [
-    "static/css/main.6143b96c.css",
-    "static/js/main.0a0c954a.js"
+    "static/css/main.ab8f0b2d.css",
+    "static/js/main.4d7bbc22.js"
   ]
 }
