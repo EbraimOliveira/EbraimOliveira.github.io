@@ -5,15 +5,26 @@ type projectProps = {
   projectImage: string;
   projectName: string;
   gitHub: string;
+  description: string;
+  stacksList: string;
 };
 
-export default function Project({ projectLink, projectImage, projectName, gitHub }: projectProps) {
+export default function Project({
+  projectLink,
+  projectImage,
+  projectName,
+  gitHub,
+  description,
+  stacksList,
+}: projectProps) {
   return (
     <div className="projectDiv">
 
       <Summary
         gitHub={gitHub}
         projectName={projectName}
+        description={description}
+        stacksList={stacksList}
       />
       <div>
         <a

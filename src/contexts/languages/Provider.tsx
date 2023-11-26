@@ -18,6 +18,11 @@ type LanguageContextState = {
   emailSent: string;
   sending: string;
   projectCode: string;
+  aboutAlgorithms: string;
+  aboutPortfolio: string;
+  aboutPixelArt: string;
+  stacks: string;
+  summary: string;
 };
 
 const LanguageContext = createContext<LanguageContextState | undefined>(undefined);
@@ -52,6 +57,11 @@ export const LanguageProvider: React.FC<{ children: ReactNode }> = ({
     emailSent: currentLanguageData.contactMe.emailSent,
     sending: currentLanguageData.contactMe.sending,
     projectCode: currentLanguageData.projects.projectCode,
+    aboutAlgorithms: currentLanguageData.projects.aboutAlgorithms,
+    aboutPortfolio: currentLanguageData.projects.aboutPortfolio,
+    stacks: currentLanguageData.projects.stacks,
+    summary: currentLanguageData.projects.summary,
+    aboutPixelArt: currentLanguageData.projects.aboutPixelArt,
   };
 
   return (

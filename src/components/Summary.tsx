@@ -1,33 +1,51 @@
 import { useLanguageContext } from "../contexts/languages/Provider";
 
-type summaryProps = {
+type SummaryProps = {
   projectName: string;
   gitHub: string;
+  description: string;
+  stacksList: string;
 };
 
-export default function Summary({ projectName, gitHub }: summaryProps) {
+export default function Summary({ projectName, gitHub, description, stacksList }: SummaryProps): JSX.Element {
 
-  const {
-    projectCode
-  } = useLanguageContext()
+  const { projectCode, stacks, summary } = useLanguageContext();
 
   return (
     <div className="btn-group">
-      <button type="button" className="btn btn-danger dropdown-toggle projectBtn" data-bs-toggle="dropdown" aria-expanded="false">
+      <button
+        type="button"
+        className="btn btn-danger dropdown-toggle projectBtn"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
         {projectName}
       </button>
       <ul className="dropdown-menu">
-        <li >
-          <h1 className="dropdown-item">text</h1>
+        <li>
+          <h4 className="dropdown-item dropDownItem">{summary}</h4>
         </li>
-        <li><a className="dropdown-item" href="#">Another action</a></li>
-        <li><hr className="dropdown-divider" /></li>
-        <li><a
-          className="dropdown-item projectCode"
-          target="_blank"
-          href={gitHub}>{projectCode}</a>
+        <li>
+          <p className="dropdown-item dropDownItem">{description}</p>
+        </li>
+        <li>
+          <h4 className="dropdown-item dropDownItem">{stacks}</h4>
+        </li>
+        <p className="dropdown-item dropDownItem">{stacksList}</p>
+        <li>
+          <hr className="dropdown-divider" />
+        </li>
+        <li>
+          <a
+            className="dropdown-item dropDownItem projectCode"
+            target="_blank"
+            rel="noopener noreferrer"
+            href={gitHub}
+          >
+            {projectCode}
+          </a>
         </li>
       </ul>
     </div>
-  )
+  );
 }
