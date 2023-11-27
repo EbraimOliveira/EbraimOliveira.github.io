@@ -13,7 +13,8 @@
 .my_name {
   color: var(--color-dark4);
   font-weight: 500;
-  margin-left: -11.5%;
+  margin-left: -11.5%;;
+  margin-right: -8%;
 }
 
 .language_btn {

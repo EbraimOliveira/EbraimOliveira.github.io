@@ -7,11 +7,7 @@ type SummaryProps = {
   stacksList: string;
 };
 
-export default function Summary(
-  { projectName,
-    gitHub,
-    description,
-    stacksList }: SummaryProps): JSX.Element {
+export default function Summary({ projectName, gitHub, description, stacksList }: SummaryProps): JSX.Element {
 
   const { projectCode, stacks, summary } = useLanguageContext();
 

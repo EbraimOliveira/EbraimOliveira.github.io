@@ -33,7 +33,6 @@
   max-width: 80%;
   max-height: 300%;
   overflow-y: auto;
-  cursor: default;
 }
 
 .dropdown-item{

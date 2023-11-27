@@ -29,7 +29,7 @@ export default function () {
       projectName: 'Pixels Art ',
       gitHub: 'https://github.com/ebraimoliveira/pixels_art',
       description: aboutPixelArt,
-      stacksList: 'HTML - CSS - Javascript - ESLint'
+      stacksList: 'HTML - CSS - Javascript ESLint'
     },
     {
       projectImage: portifolioImg,
@@ -37,7 +37,7 @@ export default function () {
       projectName: 'Portfolio ',
       gitHub: 'https://github.com/ebraimoliveira/ebraimoliveira.github.io/tree/main',
       description: aboutPortfolio,
-      stacksList: 'HTML - CSS - Bootstrap - React - ReactDOM - React Router DOM - Typescript - EmailJS',
+      stacksList: 'HTML - CSS - Bootstrap - React - ReactDOM - React Router DOM - Typescript - @emailjs/browser',
     },
     {
       projectImage: building,
@@ -46,7 +46,7 @@ export default function () {
       gitHub: '',
       description: '',
       stacksList: `HTML - CSS - React Native - React Native Paper - Jest - Babel - 
-      Typescript - ESLint - Express.js - Cors - Nodemon - Bcrypt - JWT - MongoDB - Mongoose - Docker`,
+      Typescript - ESLint - Express.js - Cors - Nodemon - Bcrypt - Jsonwebtoken - MongoDB - Mongoose - Docker`,
     },
     {
       projectImage: mergeSortImg,
