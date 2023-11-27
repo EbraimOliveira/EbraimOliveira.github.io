@@ -22,7 +22,7 @@ alterar o tamanho do grid e exercer toda a criatividade em artes pixeladas`
 
 const aboutPixelArtEn = 'Interactive page that allows selecting colors from a diverse palette, changing the grid size, and unleashing creativity in pixel art.'
 
-const aboutPortfolioPt = `Um projeto básico mas que apresentou diversos desafios e proporcionou muito aprendizado.
+const aboutPortfolioPt = `Este portfólio apresentou diversos desafios e proporcionou muito aprendizado.
  Criado totalmente do zero e sem nenhum modelo, optei por utilizar ferramentas como typescript e react que não necessariamente
   precisavam ser usados mas que me permitiram aprimorar meu conhecimento com as referidas tecnologias.`
 
