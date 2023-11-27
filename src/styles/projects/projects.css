@@ -38,6 +38,11 @@
 .dropdown-item{
   white-space: normal;
   word-wrap: break-word;
+  pointer-events: none;
+}
+
+.project-code-txt{
+  text-align: center;
 }
 
 .projectCode{

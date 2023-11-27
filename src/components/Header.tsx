@@ -51,15 +51,22 @@ export default function Header() {
       <h1 className='my_name'>Ebraim Oliveira</h1>
       <nav className='navigation_header'>
 
-        <RenderNavBtn route='' label={toHomeBtn} active={currentRoute === '/'}></RenderNavBtn>
-        <RenderNavBtn route='projects' label={toProjectsBtn} active={currentRoute === '/projects'}></RenderNavBtn>
-        <RenderNavBtn route='hobbies' label={toHobbiesBtn} active={currentRoute === '/hobbies'}></RenderNavBtn>
-        <RenderNavBtn route='voluntary' label={toVoluntaryBtn} active={currentRoute === '/voluntary'}></RenderNavBtn>
+        <RenderNavBtn route='' label={toHomeBtn} active={currentRoute === '/'} />
+        <RenderNavBtn route='projects' label={toProjectsBtn} active={currentRoute === '/projects'} />
+        <RenderNavBtn route='hobbies' label={toHobbiesBtn} active={currentRoute === '/hobbies'} />
+        <RenderNavBtn route='voluntary' label={toVoluntaryBtn} active={currentRoute === '/voluntary'} />
 
       </nav>
       <div className='language_div'>
-        <label className='language_label' style={{ whiteSpace: 'break-spaces' }} htmlFor="language_btn_id">{languageBtn} </label>
-        <button className='language_btn' onClick={changeLanguage} id='language_btn_id' ref={buttonRef}></button>
+        <label
+          className='language_label'
+          style={{ whiteSpace: 'break-spaces' }}
+          htmlFor="language_btn_id">{languageBtn} </label>
+        <button
+          className='language_btn'
+          onClick={changeLanguage}
+          id='language_btn_id'
+          ref={buttonRef}></button>
       </div>
     </header>
   );

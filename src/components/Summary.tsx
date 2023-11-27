@@ -17,17 +17,20 @@ export default function Summary({
 
   return (
     <div className="btn-group">
+
       <button
         type="button"
         className="btn btn-danger dropdown-toggle projectBtn"
         data-bs-toggle="dropdown"
+        data-bs-auto-close="outside"
+        // data-bs-display="static"
         aria-expanded="false"
       >
         {projectName}
       </button>
       <ul className="dropdown-menu">
         <li>
-          <h4 className="dropdown-item dropDownItem">{summary}</h4>
+          <h4 className="dropdown-item dropDownItem" >{summary}</h4>
         </li>
         <li>
           <p className="dropdown-item dropDownItem">{description}</p>
@@ -39,9 +42,9 @@ export default function Summary({
         <li>
           <hr className="dropdown-divider" />
         </li>
-        <li>
+        <li className="project-code-txt">
           <a
-            className="dropdown-item dropDownItem projectCode"
+            className="projectCode"
             target="_blank"
             rel="noopener noreferrer"
             href={gitHub}
@@ -49,6 +52,7 @@ export default function Summary({
             {projectCode}
           </a>
         </li>
+
       </ul>
     </div>
   );
