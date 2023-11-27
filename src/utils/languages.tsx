@@ -95,7 +95,7 @@ export const english = {
     aboutAlgorithms: aboutAlgorithmsEn,
     aboutPixelArt: aboutPixelArtEn,
     projectCode: 'Project Code',
-    stacks: 'Stacks',
+    stacks: 'Stack',
     summary: 'Summary',
   },
   voluntary: {},

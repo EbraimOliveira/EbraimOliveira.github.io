@@ -48,7 +48,7 @@ export default function Header() {
   return (
     <header id='header'>
       {/* <h1 className='current_route'>{currentRoute(currentRoute)}</h1> */}
-      <h1 className='myName'>Ebraim Oliveira</h1>
+      <h1 className='my_name'>Ebraim Oliveira</h1>
       <nav className='navigation_header'>
 
         <RenderNavBtn route='' label={toHomeBtn} active={currentRoute === '/'}></RenderNavBtn>

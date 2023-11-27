@@ -9,7 +9,7 @@ export default function () {
   return (
     <div id="voluntary">
       <Header></Header>
-      <div className="manutencaoDiv">
+      <div className="building_div">
         <img src={paginaEmManutencao} alt="Página em manutenção" />
       </div>
     </div>

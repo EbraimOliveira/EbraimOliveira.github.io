@@ -10,9 +10,10 @@
   margin-bottom: 5em;
 }
 
-.myName {
+.my_name {
   color: var(--color-dark4);
   font-weight: 500;
+  margin-left: -11.5%;
 }
 
 .language_btn {

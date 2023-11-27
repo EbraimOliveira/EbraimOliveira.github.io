@@ -9,7 +9,7 @@ import './styles/home/home.css';
 import './styles/projects/projects.css'
 import './styles//hobbies/hobbies.css'
 import './styles/voluntary/voluntary.css';
-import './styles/others/manutencaoDiv.css';
+import './styles/others/building_div.css';
 
 import { BrowserRouter } from 'react-router-dom';
 

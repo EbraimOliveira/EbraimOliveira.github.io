@@ -10,7 +10,7 @@ export default function () {
     <div id="hobbies">
       <Header></Header>
 
-      <div className="manutencaoDiv">
+      <div className="building_div">
         <img src={paginaEmManutencao} alt="Página em manutenção" />
       </div>
       <br></br>
