@@ -28,11 +28,12 @@
 }
 
 .dropdown-menu{
-  border: 2px solid red;
+  border: 1px solid black;
   opacity: 0.9;
   max-width: 80%;
   max-height: 300%;
   overflow-y: auto;
+  /* margin-left: 10%; */
 }
 
 .dropdown-item{
@@ -43,6 +44,7 @@
 
 .project-code-txt{
   text-align: center;
+  padding: 1%;
 }
 
 .projectCode{

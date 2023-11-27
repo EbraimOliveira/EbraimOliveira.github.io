@@ -22,8 +22,8 @@ export default function Summary({
         type="button"
         className="btn btn-danger dropdown-toggle projectBtn"
         data-bs-toggle="dropdown"
-        data-bs-auto-close="outside"
         // data-bs-display="static"
+        data-bs-auto-close="outside"
         aria-expanded="false"
       >
         {projectName}

@@ -1,7 +1,7 @@
 @import './../others/root.css';
 
 #hobbies{
-  background-color: var(--color-dark4);
+  /* background-color: var(--color-dark4); */
   min-height: 100vh;
   display: flex;
   flex-direction: column

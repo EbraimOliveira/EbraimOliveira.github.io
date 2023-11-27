@@ -32,6 +32,14 @@ export default function () {
       stacksList: 'HTML - CSS - Javascript - ESLint'
     },
     {
+      projectImage: mergeSortImg,
+      projectLink: mergeSort,
+      projectName: 'Merge Sort ',
+      gitHub: 'https://github.com/ebraimoliveira/merge_sort',
+      description: aboutAlgorithms,
+      stacksList: 'CSS - HTML - Python - Flask',
+    },
+    {
       projectImage: portifolioImg,
       projectLink: myPortifolio,
       projectName: 'Portfolio ',
