@@ -17,7 +17,6 @@ export default function Header() {
   const {
     toProjectsBtn,
     toHobbiesBtn,
-    toVoluntaryBtn,
     languageBtn,
     toHomeBtn,
     currentLanguage,
@@ -54,7 +53,6 @@ export default function Header() {
         <RenderNavBtn route='' label={toHomeBtn} active={currentRoute === '/'} />
         <RenderNavBtn route='projects' label={toProjectsBtn} active={currentRoute === '/projects'} />
         <RenderNavBtn route='hobbies' label={toHobbiesBtn} active={currentRoute === '/hobbies'} />
-        <RenderNavBtn route='voluntary' label={toVoluntaryBtn} active={currentRoute === '/voluntary'} />
 
       </nav>
       <div className='language_div'>

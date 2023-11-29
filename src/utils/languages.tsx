@@ -48,7 +48,6 @@ export const portuguese = {
   buttons: {
     toProjectsBtn: 'Projetos',
     toHobbiesBtn: 'Passatempos',
-    toVoluntaryBtn: 'Voluntário',
     languageBtn: 'Idioma',
     toHomeBtn: 'Início',
   },
@@ -63,7 +62,6 @@ export const portuguese = {
     stacks: 'Tecnologias',
     summary: 'Resumo',
   },
-  voluntary: {},
   hobbies: {
     hobbyClimb: hobbyClimbPt,
     hobbyBoardGames: hobbyBoardGamesPt
@@ -83,7 +81,6 @@ export const english = {
   buttons: {
     toProjectsBtn: 'Projects',
     toHobbiesBtn: 'Hobbies',
-    toVoluntaryBtn: 'Voluntary',
     languageBtn: 'Language',
     toHomeBtn: 'Home',
   },
@@ -98,7 +95,6 @@ export const english = {
     stacks: 'Stack',
     summary: 'Summary',
   },
-  voluntary: {},
   hobbies: {
     hobbyClimb: hobbyClimbEn,
     hobbyBoardGames: hobbyBoardGamesEn

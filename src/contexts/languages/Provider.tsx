@@ -7,7 +7,6 @@ type LanguageContextState = {
   languageBtn: string;
   toProjectsBtn: string;
   toHobbiesBtn: string;
-  toVoluntaryBtn: string;
   toHomeBtn: string;
   welcomeTxt: string;
   nameTxt: string;
@@ -46,7 +45,6 @@ export const LanguageProvider: React.FC<{ children: ReactNode }> = ({
     languageBtn: currentLanguageData.buttons.languageBtn,
     toProjectsBtn: currentLanguageData.buttons.toProjectsBtn,
     toHobbiesBtn: currentLanguageData.buttons.toHobbiesBtn,
-    toVoluntaryBtn: currentLanguageData.buttons.toVoluntaryBtn,
     toHomeBtn: currentLanguageData.buttons.toHomeBtn,
     welcomeTxt: currentLanguageData.home.welcomeTxt,
     nameTxt: currentLanguageData.contactMe.nameTxt,

@@ -2,8 +2,6 @@
 
 #home{
   background-color: var(--color-dark4);
-  /* background-color: purple; */
-  /* background-color: yellow; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -50,4 +48,15 @@
   border-radius: 50%;
   border: 2px solid white;
   margin: 10% 50% -10% 0%;
+  transition: transform 0.3s ease-in-out;
+  /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); */
+  /* transition: clip-path 0.3s ease-in-out; */
 }
+
+.image:hover {
+  transform: scale(1.1);
+}
+/* 
+.image:hover {
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+} */
