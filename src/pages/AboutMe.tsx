@@ -4,17 +4,17 @@ import { useLanguageContext } from "../contexts/languages/Provider"
 import paginaEmManutencao from '../images/paginaEmConstrucao.jpg';
 
 export default function () {
-  const { toHobbiesBtn } = useLanguageContext()
+  const { toaboutMeBtn } = useLanguageContext()
 
   return (
-    <div id="hobbies">
+    <div id="about_me">
       <Header></Header>
 
       <div className="building_div">
         <img src={paginaEmManutencao} alt="Página em manutenção" />
       </div>
       <br></br>
-      <p>{toHobbiesBtn}
+      <p>{toaboutMeBtn}
         BoardGames, Escalada, Rpg, Literatura, Marcenaria , Moto</p>
     </div>
   )

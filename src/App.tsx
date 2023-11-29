@@ -3,7 +3,7 @@ import { LanguageProvider } from "./contexts/languages/Provider";
 
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
-import Hobbies from "./pages/Hobbies";
+import AboutMe from "./pages/AboutMe";
 
 export default function App() {
   return (
@@ -12,7 +12,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="projects" element={<Projects />} />
-          <Route path="hobbies" element={<Hobbies />} />
+          <Route path="aboutMe" element={<AboutMe />} />
         </Routes>
       </LanguageProvider>
     </>
